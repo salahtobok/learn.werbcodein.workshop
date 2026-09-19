@@ -30,6 +30,7 @@ jobs:
           - security/jakarta-security-4-vs-spring-security-7/spring-security
           - security/jakarta-security-4-vs-spring-security-7/jakarta-security
           - testing/testcontainers-docker-compose-spring-boot-4  # Testcontainers (Docker)
+          - ai/spring-ai-2-0-spring-boot-4
     steps:
       - uses: actions/checkout@v4
 
