@@ -20,6 +20,6 @@ java -jar target/native-demo-0.0.1-SNAPSHOT.jar   # JVM comparison
 ```
 The post uses `./mvnw`; this folder has no Maven wrapper. Generate one with `mvn wrapper:wrapper` before using the `Dockerfile`.
 
-Startup times in the post (0.045s native vs 2.341s JVM) were not measured here.
+Measured 2026-09-19 (Windows 11, Docker Desktop, 3 runs each): the native image in a container started in 0.14-0.17 s, the JVM jar on the host in 2.5-3.7 s (about 15-20x faster). The post quotes 0.045 s and 2.341 s; the JVM figure is in the same range, the native figure was not reproduced here (container on a Docker Desktop VM, not tuned).
 
-Status: `mvn verify` passes (hints test) on JDK 25, Maven 3.9.9, 2026-09-19. The native compile, the native image build and the Dockerfile were not run (they need GraalVM), so the startup times in the post are unverified.
+Status: `mvn verify` passes (hints test) on JDK 25, Maven 3.9.9, 2026-09-19. `mvn -Pnative spring-boot:build-image` (buildpacks, BellSoft Liberica NIK 25) built a 236 MB image in 9m37s, and `GET /greet/Ada` returned the expected text. The `Dockerfile` (needs `./mvnw`) was not run.

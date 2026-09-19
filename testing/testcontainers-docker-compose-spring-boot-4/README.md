@@ -6,7 +6,7 @@ Companion code for the post `testcontainers-docker-compose-spring-boot-4`.
 - `compose.yaml`: Postgres and Redis. Spring Boot starts it automatically on `mvn spring-boot:run` (`spring-boot-docker-compose`).
 - `EmployeeRepositoryIntegrationTest`: Testcontainers with `@ServiceConnection`.
 - `AbstractIntegrationTest`: the singleton container pattern.
-- `.github/workflows/ci.yml`: CI example from the post. GitHub only runs it from the repository root, so copy it to the root `.github/workflows/` to use it.
+- CI: the workshop repo root workflow `.github/workflows/build.yml` builds this project (GitHub only runs workflows from the repo root). The workflow shown in the post is the same idea: JDK 25 plus `mvn -B verify`, with Docker already available on `ubuntu-latest`.
 
 ## Requirements
 JDK 25, Maven 3.9+, a running Docker daemon.

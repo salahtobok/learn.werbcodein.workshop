@@ -10,3 +10,6 @@
 | security | Jakarta Security 4.0 vs Spring Security 7: The Ultimate 2026 Guide | `content/wordpress-export/security/jakarta-security-4-vs-spring-security-7` | [workshop/security/jakarta-security-4-vs-spring-security-7](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/security/jakarta-security-4-vs-spring-security-7) |
 | architecture | Clean Architecture: Implementing Hexagonal (Ports & Adapters) in Spring Boot 4 | `content/wordpress-export/architecture/hexagonal-architecture-spring-boot-4` | [workshop/architecture/hexagonal-architecture-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/hexagonal-architecture-spring-boot-4) |
 | persistence | Hibernate 7.0 & Spring Data JPA 4: The Best New Features | `content/wordpress-export/persistence/hibernate-7-spring-data-jpa-4` | [workshop/persistence/hibernate-7-spring-data-jpa-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/persistence/hibernate-7-spring-data-jpa-4) |
+
+## CI
+`.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.
