@@ -1,4 +1,4 @@
-# Post 02 workshop: Introducing Jakarta Data 1.0: The Powerful Enterprise Alternative to Spring Data
+# Workshop: Introducing Jakarta Data 1.0: The Powerful Enterprise Alternative to Spring Data
 
 Companion code for the post `jakarta-data-enterprise-alternative-spring-data`.
 
