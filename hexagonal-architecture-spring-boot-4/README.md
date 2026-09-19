@@ -28,4 +28,4 @@ mvn spring-boot:run   # POST /api/transfers  {"source":1,"target":2,"amount":10}
 ```
 There is no seed data, so a transfer returns an error until accounts with ids 1 and 2 exist.
 
-Status: written but not yet built or run.
+Status: `mvn verify` passes (2 tests) on JDK 25, Maven 3.9.9, 2026-09-19. `mvn spring-boot:run` and the REST endpoint were not run.

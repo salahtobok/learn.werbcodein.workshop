@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface ProductRepository extends CrudRepository<Product, Long> {
 
-    // Querying directly inside the JSON column
-    @Query("SELECT p FROM Product p WHERE p.metadata.manufacturer = :manufacturer")
+    // Querying inside the JSON column with the HQL json_value() function
+    @Query("SELECT p FROM Product p WHERE json_value(p.metadata, '$.manufacturer') = :manufacturer")
     List<Product> findByManufacturer(String manufacturer);
 }

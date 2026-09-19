@@ -17,4 +17,4 @@ mvn spring-boot:run   # local dev, containers managed via compose.yaml
 mvn verify            # tests against real PostgreSQL via Testcontainers
 ```
 
-Status: written but not yet built or run (no Docker verification).
+Status: `mvn verify` passes (2 tests, real PostgreSQL via Testcontainers) on JDK 25, Maven 3.9.9, Docker Desktop, 2026-09-19. `mvn spring-boot:run` with `compose.yaml` was not run.

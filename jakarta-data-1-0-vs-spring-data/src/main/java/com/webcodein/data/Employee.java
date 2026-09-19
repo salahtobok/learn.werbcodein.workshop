@@ -13,7 +13,7 @@ public class Employee {
     private String lastName;
     private String department;
     private double salary;
-    private boolean isActive;
+    private boolean active;
 
     protected Employee() {
     }
@@ -23,7 +23,7 @@ public class Employee {
         this.lastName = lastName;
         this.department = department;
         this.salary = salary;
-        this.isActive = isActive;
+        this.active = isActive;
     }
 
     public Long getId() {
@@ -47,6 +47,6 @@ public class Employee {
     }
 
     public boolean isActive() {
-        return isActive;
+        return active;
     }
 }

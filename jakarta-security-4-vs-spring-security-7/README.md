@@ -22,4 +22,4 @@ cd jakarta-security && mvn package     # produces target/jakarta-security-4-demo
 - Spring: the post uses `oauth2.jwt()`; this code uses `oauth2.jwt(Customizer.withDefaults())`, the form current Spring Security expects. The post's `/api/admin` endpoint is added as `ApiController`.
 - Jakarta: the client secret must come from configuration (environment variable), never from the repository.
 
-Status: written but not yet built, run or deployed. Boot 4.0.0 / Jakarta EE 11 artifact versions are from memory.
+Status: both modules build on 2026-09-19 (`spring-security`: `mvn verify`, no tests; `jakarta-security`: WAR packaged). Nothing was run or deployed, and no identity provider was available, so authentication is untested.

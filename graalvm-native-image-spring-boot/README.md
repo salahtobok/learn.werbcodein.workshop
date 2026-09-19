@@ -22,4 +22,4 @@ The post uses `./mvnw`; this folder has no Maven wrapper. Generate one with `mvn
 
 Startup times in the post (0.045s native vs 2.341s JVM) were not measured here.
 
-Status: written but not yet built or run.
+Status: `mvn verify` passes (hints test) on JDK 25, Maven 3.9.9, 2026-09-19. The native compile, the native image build and the Dockerfile were not run (they need GraalVM), so the startup times in the post are unverified.

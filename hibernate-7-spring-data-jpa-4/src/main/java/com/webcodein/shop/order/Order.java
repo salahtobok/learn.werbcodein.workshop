@@ -8,8 +8,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "orders")
@@ -22,12 +22,12 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-    // Two Lists ("bags") fetched together is what used to cause MultipleBagFetchException
+    // Sets, not Lists: fetching two List ("bag") collections together throws MultipleBagFetchException
     @OneToMany(cascade = CascadeType.ALL)
-    private List<LineItem> lineItems = new ArrayList<>();
+    private Set<LineItem> lineItems = new LinkedHashSet<>();
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Discount> discounts = new ArrayList<>();
+    private Set<Discount> discounts = new LinkedHashSet<>();
 
     protected Order() {
     }
@@ -40,11 +40,11 @@ public class Order {
         return status;
     }
 
-    public List<LineItem> getLineItems() {
+    public Set<LineItem> getLineItems() {
         return lineItems;
     }
 
-    public List<Discount> getDiscounts() {
+    public Set<Discount> getDiscounts() {
         return discounts;
     }
 }

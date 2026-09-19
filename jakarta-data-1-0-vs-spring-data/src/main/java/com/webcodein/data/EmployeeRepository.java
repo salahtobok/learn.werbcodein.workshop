@@ -1,6 +1,8 @@
 package com.webcodein.data;
 
+import jakarta.data.repository.By;
 import jakarta.data.repository.CrudRepository;
+import jakarta.data.repository.Find;
 import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
 import java.util.List;
@@ -8,8 +10,9 @@ import java.util.List;
 @Repository
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 
-    // Derived query based on method name
-    List<Employee> findByDepartmentAndIsActiveTrue(String department);
+    // Parameter-based query: each parameter is matched against the entity property named in @By
+    @Find
+    List<Employee> activeInDepartment(@By("department") String department, @By("active") boolean active);
 
     // Custom query
     @Query("SELECT e FROM Employee e WHERE e.salary > ?1 ORDER BY e.lastName ASC")
