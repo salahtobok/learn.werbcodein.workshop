@@ -5,20 +5,28 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
+import org.springframework.ai.chat.memory.ChatMemory;
 
 @RestController
 public class AiController {
 
     private final ChatClient chatClient;
 
-    public AiController(ChatClient.Builder chatClientBuilder) {
-        this.chatClient = chatClientBuilder.build();
+    public AiController(ChatClient.Builder chatClientBuilder, ChatMemory chatMemory) {
+        this.chatClient = chatClientBuilder
+                .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
+                .build();
     }
 
     @GetMapping("/api/chat")
-    public String chat(@RequestParam(defaultValue = "Tell me a joke") String message) {
+    public String chat(
+            @RequestParam(defaultValue = "Tell me a joke") String message,
+            @RequestParam(defaultValue = "default-user") String chatId) {
+        
         return chatClient.prompt()
                 .user(message)
+                .advisors(a -> a.param("chat_memory_conversation_id", chatId))
                 .call()
                 .content();
     }

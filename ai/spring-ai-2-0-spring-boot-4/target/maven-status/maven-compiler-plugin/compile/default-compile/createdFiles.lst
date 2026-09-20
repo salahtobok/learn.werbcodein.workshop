@@ -1,0 +1,6 @@
+com\webcodein\ai\SpringAiApplication.class
+com\webcodein\ai\AiController$Author.class
+com\webcodein\ai\WeatherService$WeatherResponse.class
+com\webcodein\ai\AiController.class
+com\webcodein\ai\WeatherService$WeatherRequest.class
+com\webcodein\ai\WeatherService.class
