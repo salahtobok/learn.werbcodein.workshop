@@ -4,6 +4,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController
 public class AiController {
@@ -29,5 +30,15 @@ public class AiController {
                 .tools(WeatherService.class)
                 .call()
                 .content();
+    }
+
+    public record Author(String name, String biography, List<String> famousBooks) {}
+
+    @GetMapping("/api/author")
+    public Author getAuthorInfo(@RequestParam(defaultValue = "J.R.R. Tolkien") String name) {
+        return chatClient.prompt()
+                .user("Give me a brief biography of " + name + " and list some famous books.")
+                .call()
+                .entity(Author.class);
     }
 }
