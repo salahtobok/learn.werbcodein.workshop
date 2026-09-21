@@ -1,0 +1,21 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0.0
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    ports:
+      - "8080:8080"
+    command: start-dev --import-realm
+    volumes:
+      - ./realm-export.json:/opt/keycloak/data/import/realm-export.json
+
+  app:
+    build: .
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI=http://keycloak:8080/realms/webcodein-realm
+      - SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI=http://keycloak:8080/realms/webcodein-realm/protocol/openid-connect/certs
+    depends_on:
+      - keycloak
