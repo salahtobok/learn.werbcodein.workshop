@@ -16,3 +16,4 @@
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.
+
