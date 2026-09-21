@@ -12,6 +12,7 @@
 | persistence | Hibernate 7.0 & Spring Data JPA 4: The Best New Features | `content/wordpress-export/persistence/hibernate-7-spring-data-jpa-4` | [workshop/persistence/hibernate-7-spring-data-jpa-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/persistence/hibernate-7-spring-data-jpa-4) |
 | ai | Spring AI 2.0: The Complete Guide to AI Integration in Spring Boot 4 | `content/wordpress-export/ai/spring-ai-2-0-spring-boot-4` | [workshop/ai/spring-ai-2-0-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/ai/spring-ai-2-0-spring-boot-4) |
 | kotlin | Kotlin Backend Development with Spring Boot 4 | `content/wordpress-export/kotlin/kotlin-spring-boot-4-backend-guide` | [workshop/kotlin/kotlin-spring-boot-4-backend-guide](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/kotlin/kotlin-spring-boot-4-backend-guide) |
+| cloud-native | CI/CD DevOps: Zero-Downtime Deployments with GitHub Actions, Terraform, and Docker Swarm | `content/wordpress-export/cloud-native/cicd-github-actions-terraform-swarm` | [workshop/cloud-native/cicd-github-actions-terraform-swarm](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/cloud-native/cicd-github-actions-terraform-swarm) |
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.

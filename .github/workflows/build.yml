@@ -25,6 +25,7 @@ jobs:
         project:
           - architecture/hexagonal-architecture-spring-boot-4
           - cloud-native/graalvm-native-image-spring-boot
+          - cloud-native/cicd-github-actions-terraform-swarm
           - persistence/hibernate-7-spring-data-jpa-4          # Testcontainers (Docker)
           - persistence/jakarta-data-1-0-vs-spring-data
           - security/jakarta-security-4-vs-spring-security-7/spring-security
