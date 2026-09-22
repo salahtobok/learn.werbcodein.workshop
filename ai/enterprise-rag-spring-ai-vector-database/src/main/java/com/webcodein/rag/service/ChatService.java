@@ -1,7 +1,8 @@
 package com.webcodein.rag.service;
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
+import org.springframework.ai.rag.advisor.RetrievalAugmentationAdvisor;
+import org.springframework.ai.rag.retrieval.search.VectorStoreDocumentRetriever;
 import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,12 @@ public class ChatService {
 
     public ChatService(ChatClient.Builder chatClientBuilder, VectorStore vectorStore) {
         this.chatClient = chatClientBuilder
-                .defaultAdvisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.builder().topK(3).build()))
+                .defaultAdvisors(RetrievalAugmentationAdvisor.builder()
+                        .documentRetriever(VectorStoreDocumentRetriever.builder()
+                                .vectorStore(vectorStore)
+                                .topK(3)
+                                .build())
+                        .build())
                 .build();
     }
 
