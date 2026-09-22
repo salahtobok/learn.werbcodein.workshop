@@ -5,7 +5,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://placeholder.identity-provider.com/realms/webcodein
+          issuer-uri: http://localhost:8080/realms/webcodein-realm
 
 server:
   port: 8080
