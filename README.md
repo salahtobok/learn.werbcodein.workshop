@@ -23,6 +23,7 @@
 | cloud-native | CI/CD DevOps: Zero-Downtime Deployments with GitHub Actions, Terraform, and Docker Swarm | `content/wordpress-export/cloud-native/cicd-github-actions-terraform-swarm` | [workshop/cloud-native/cicd-github-actions-terraform-swarm](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/cloud-native/cicd-github-actions-terraform-swarm) |
 | java-core | Project Valhalla: Value Types in Java 25 | `content/wordpress-export/java-core/project-valhalla-value-types-java-25` | [workshop/java-core/project-valhalla-value-types-java-25](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/java-core/project-valhalla-value-types-java-25) |
 | architecture | Event-Driven Microservices in Java 25: Apache Kafka & Spring Boot 4 | `content/wordpress-export/architecture/event-driven-kafka-spring-boot-4` | [workshop/architecture/event-driven-kafka-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/event-driven-kafka-spring-boot-4) |
+| observability | Observability & Distributed Tracing in Spring Boot 4 | `content/wordpress-export/observability/opentelemetry-grafana-spring-boot-4` | [workshop/observability/opentelemetry-grafana-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/observability/opentelemetry-grafana-spring-boot-4) |
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.

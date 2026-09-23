@@ -36,6 +36,7 @@ jobs:
           - ai/enterprise-rag-spring-ai-vector-database
           - java-core/project-valhalla-value-types-java-25
           - architecture/event-driven-kafka-spring-boot-4
+          - observability/opentelemetry-grafana-spring-boot-4
     steps:
       - uses: actions/checkout@v4
 
