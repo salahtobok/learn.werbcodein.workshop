@@ -25,6 +25,7 @@
 | architecture | Event-Driven Microservices in Java 25: Apache Kafka & Spring Boot 4 | `content/wordpress-export/architecture/event-driven-kafka-spring-boot-4` | [workshop/architecture/event-driven-kafka-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/event-driven-kafka-spring-boot-4) |
 | observability | Observability & Distributed Tracing in Spring Boot 4 | `content/wordpress-export/observability/opentelemetry-grafana-spring-boot-4` | [workshop/observability/opentelemetry-grafana-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/observability/opentelemetry-grafana-spring-boot-4) |
 | java-core | Java 25 Virtual Threads in Spring Boot 4: High-Concurrency APIs | `content/wordpress-export/java-core/virtual-threads-spring-boot-4` | [workshop/java-core/virtual-threads-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/java-core/virtual-threads-spring-boot-4) |
+| architecture | The Definitive Guide to Hexagonal Architecture & DDD in Jakarta EE 11 | `content/wordpress-export/architecture/hexagonal-architecture-ddd-jakarta-ee-11` | [workshop/architecture/hexagonal-architecture-ddd-jakarta-ee-11](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/hexagonal-architecture-ddd-jakarta-ee-11) |
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.
