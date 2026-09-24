@@ -28,7 +28,7 @@
 | architecture | The Definitive Guide to Hexagonal Architecture & DDD in Jakarta EE 11 | `content/wordpress-export/architecture/hexagonal-architecture-ddd-jakarta-ee-11` | [workshop/architecture/hexagonal-architecture-ddd-jakarta-ee-11](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/hexagonal-architecture-ddd-jakarta-ee-11) |
 | architecture | Introduction to Domain-Driven Design with Jakarta EE 11: A Practical Guide | `content/wordpress-export/architecture/introduction-to-ddd-jakarta-ee-11` | [workshop/architecture/introduction-to-ddd-jakarta-ee-11](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/introduction-to-ddd-jakarta-ee-11) |
 
-| architecture | Introduction to Domain-Driven Design (DDD) with Jakarta EE: From Concepts to a Real Application | `content/wordpress-export/architecture/ddd-jakarta-ee-multipage` | [workshop/architecture/ddd-jakarta-ee-multipage](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-jakarta-ee-multipage) |
+| architecture | Practical Domain-Driven Design with Jakarta EE 11 | `content/wordpress-export/architecture/practical-ddd-jakarta-ee` | [workshop/architecture/practical-ddd-jakarta-ee](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/practical-ddd-jakarta-ee) |
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.

@@ -12,9 +12,9 @@
     </parent>
 
     <groupId>com.webcodein.documents</groupId>
-    <artifactId>ddd-jakarta-ee-multipage</artifactId>
+    <artifactId>practical-ddd-jakarta-ee</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>ddd-jakarta-ee-multipage</name>
+    <name>practical-ddd-jakarta-ee</name>
     <description>DDD with Jakarta EE 11 Multipage Guide</description>
 
     <properties>

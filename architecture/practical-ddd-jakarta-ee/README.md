@@ -1,6 +1,6 @@
 # DDD with Jakarta EE 11 Example
 
-This is the companion code for the article **Introduction to Domain-Driven Design (DDD) with Jakarta EE: From Concepts to a Real Application**.
+This is the companion code for the article **Practical Domain-Driven Design with Jakarta EE 11**.
 
 ## Tech Stack
 - Java 25
