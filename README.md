@@ -27,8 +27,8 @@
 | java-core | Java 25 Virtual Threads in Spring Boot 4: High-Concurrency APIs | `content/wordpress-export/java-core/virtual-threads-spring-boot-4` | [workshop/java-core/virtual-threads-spring-boot-4](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/java-core/virtual-threads-spring-boot-4) |
 | architecture | The Definitive Guide to Hexagonal Architecture & DDD in Jakarta EE 11 | `content/wordpress-export/architecture/hexagonal-architecture-ddd-jakarta-ee-11` | [workshop/architecture/hexagonal-architecture-ddd-jakarta-ee-11](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/hexagonal-architecture-ddd-jakarta-ee-11) |
 | architecture | Introduction to Domain-Driven Design with Jakarta EE 11: A Practical Guide | `content/wordpress-export/architecture/introduction-to-ddd-jakarta-ee-11` | [workshop/architecture/introduction-to-ddd-jakarta-ee-11](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/introduction-to-ddd-jakarta-ee-11) |
-
 | architecture | Practical Domain-Driven Design with Jakarta EE 11 | `content/wordpress-export/architecture/practical-ddd-jakarta-ee` | [workshop/architecture/practical-ddd-jakarta-ee](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/practical-ddd-jakarta-ee) |
+| architecture | Domain-Driven Design (DDD) Masterclass: The Ultimate Java Developer Guide | `content/wordpress-export/architecture/ddd-masterclass-java-guide` | [workshop/architecture/ddd-masterclass-java-guide](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-masterclass-java-guide) |
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.
