@@ -1,4 +1,4 @@
-﻿name: Build workshop projects
+name: Build workshop projects
 
 # GitHub only runs workflows from the repository root, so this one builds every
 # companion project in the domain folders. Add a matrix entry when a project is added.
@@ -40,6 +40,16 @@ jobs:
           - java-core/virtual-threads-spring-boot-4
           - architecture/hexagonal-architecture-ddd-jakarta-ee-11
           - architecture/introduction-to-ddd-jakarta-ee-11
+          - architecture/domain-driven-design-explained-beginners-guide
+          - architecture/first-ddd-application-spring-boot-4-tutorial
+          - architecture/ddd-vs-crud-visual-guide-java-developers
+          - architecture/ddd-building-blocks-java-25-entity-value-object-aggregate
+          - architecture/bounded-context-ddd-explained-beginners
+          - architecture/ubiquitous-language-ddd-naming-things
+          - architecture/ddd-for-crud-developers-when-why-level-up
+          - architecture/ddd-layers-explained-code-structure-spring-boot
+          - architecture/ddd-concepts-java-developer-must-know
+          - architecture/ddd-mistakes-beginners-how-to-avoid
     steps:
       - uses: actions/checkout@v4
 

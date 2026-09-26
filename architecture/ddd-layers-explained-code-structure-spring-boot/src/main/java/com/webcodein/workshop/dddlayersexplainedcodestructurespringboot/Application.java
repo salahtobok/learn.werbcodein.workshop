@@ -1,4 +1,4 @@
-﻿package com.webcodein.workshop.dddlayersexplainedcodestructurespringboot;
+package com.webcodein.workshop.dddlayersexplainedcodestructurespringboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

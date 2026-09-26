@@ -1,4 +1,4 @@
-﻿# learn.werbcodein.workshop
+# learn.werbcodein.workshop
 
 ## Post <-> workshop map
 
@@ -29,6 +29,16 @@
 | architecture | Introduction to Domain-Driven Design with Jakarta EE 11: A Practical Guide | `content/wordpress-export/architecture/introduction-to-ddd-jakarta-ee-11` | [workshop/architecture/introduction-to-ddd-jakarta-ee-11](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/introduction-to-ddd-jakarta-ee-11) |
 | architecture | Practical Domain-Driven Design with Jakarta EE 11 | `content/wordpress-export/architecture/practical-ddd-jakarta-ee` | [workshop/architecture/practical-ddd-jakarta-ee](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/practical-ddd-jakarta-ee) |
 | architecture | Domain-Driven Design (DDD) Masterclass: The Ultimate Java Developer Guide | `content/wordpress-export/architecture/ddd-masterclass-java-guide` | [workshop/architecture/ddd-masterclass-java-guide](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-masterclass-java-guide) |
+| architecture | DDD Explained Simply | `content/wordpress-export/architecture/domain-driven-design-explained-beginners-guide` | [workshop/architecture/domain-driven-design-explained-beginners-guide](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/domain-driven-design-explained-beginners-guide) |
+| architecture | First DDD App Tutorial | `content/wordpress-export/architecture/first-ddd-application-spring-boot-4-tutorial` | [workshop/architecture/first-ddd-application-spring-boot-4-tutorial](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/first-ddd-application-spring-boot-4-tutorial) |
+| architecture | DDD vs CRUD | `content/wordpress-export/architecture/ddd-vs-crud-visual-guide-java-developers` | [workshop/architecture/ddd-vs-crud-visual-guide-java-developers](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-vs-crud-visual-guide-java-developers) |
+| architecture | DDD Building Blocks | `content/wordpress-export/architecture/ddd-building-blocks-java-25-entity-value-object-aggregate` | [workshop/architecture/ddd-building-blocks-java-25-entity-value-object-aggregate](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-building-blocks-java-25-entity-value-object-aggregate) |
+| architecture | Bounded Contexts | `content/wordpress-export/architecture/bounded-context-ddd-explained-beginners` | [workshop/architecture/bounded-context-ddd-explained-beginners](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/bounded-context-ddd-explained-beginners) |
+| architecture | Ubiquitous Language | `content/wordpress-export/architecture/ubiquitous-language-ddd-naming-things` | [workshop/architecture/ubiquitous-language-ddd-naming-things](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ubiquitous-language-ddd-naming-things) |
+| architecture | DDD for CRUD Developers | `content/wordpress-export/architecture/ddd-for-crud-developers-when-why-level-up` | [workshop/architecture/ddd-for-crud-developers-when-why-level-up](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-for-crud-developers-when-why-level-up) |
+| architecture | DDD Layers Explained | `content/wordpress-export/architecture/ddd-layers-explained-code-structure-spring-boot` | [workshop/architecture/ddd-layers-explained-code-structure-spring-boot](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-layers-explained-code-structure-spring-boot) |
+| architecture | 10 DDD Concepts | `content/wordpress-export/architecture/ddd-concepts-java-developer-must-know` | [workshop/architecture/ddd-concepts-java-developer-must-know](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-concepts-java-developer-must-know) |
+| architecture | DDD Mistakes | `content/wordpress-export/architecture/ddd-mistakes-beginners-how-to-avoid` | [workshop/architecture/ddd-mistakes-beginners-how-to-avoid](https://github.com/salahtobok/learn.werbcodein.workshop/tree/main/architecture/ddd-mistakes-beginners-how-to-avoid) |
 
 ## CI
 `.github/workflows/build.yml` builds every project with `mvn verify` (JDK 25, Docker available for the Testcontainers projects). Add a matrix entry when adding a project.
