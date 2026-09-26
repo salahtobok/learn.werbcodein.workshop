@@ -1,4 +1,4 @@
-name: Build workshop projects
+﻿name: Build workshop projects
 
 # GitHub only runs workflows from the repository root, so this one builds every
 # companion project in the domain folders. Add a matrix entry when a project is added.
@@ -55,3 +55,4 @@ jobs:
       # This runs the JVM build and tests; the native image build is not part of CI.
       - name: Build and test
         run: mvn -B -ntp -f "${{ matrix.project }}/pom.xml" verify
+
